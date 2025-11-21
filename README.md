@@ -2,15 +2,13 @@
 
 <div align="center">
 
-![CommunityConnect Logo](assets/icon.png)
-
 **Plataforma móvil para descubrir, crear y gestionar eventos comunitarios**
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-blue.svg)](https://reactnative.dev/)
 [![Expo](https://img.shields.io/badge/Expo-~54.0.24-purple.svg)](https://expo.dev/)
 
-[🔗 Trello Board](https://trello.com/invite/b/691ce1706f3b6e3be6bf0e82/ATTI03451bbfa4fd5b54aad02bcd44f53bce40504595/aplicacion-de-gestion-de-eventos-comunitarios) • [🎨 Diseños Mock-Ups](#) • [📖 Documentación](./docs/)
+• [Backend](https://github.com/KrevsX/event-management.git)[🔗 Trello Board](https://trello.com/invite/b/691ce1706f3b6e3be6bf0e82/ATTI03451bbfa4fd5b54aad02bcd44f53bce40504595/aplicacion-de-gestion-de-eventos-comunitarios) • [🎨 Diseños Mock-Ups](#) • [📖 Documentación](./docs/)
 
 </div>
 
