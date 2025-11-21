@@ -6,25 +6,37 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+
+    "scheme": "com.communityconnect.frontend",
+
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.communityconnect.frontend"
     },
+
     "android": {
+      "package": "com.communityconnect.frontend",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+
+    "plugins": [
+      "expo-web-browser",
+      "expo-secure-store"
+    ],
+
+    "extra": {
+      "eas": {
+        "projectId": "0a72f9bf-269a-470f-adc1-f4653c55273e"
+      }
     }
   }
 }
