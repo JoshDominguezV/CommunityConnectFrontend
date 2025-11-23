@@ -45,3 +45,4 @@ const CategoryFilter = ({ selected, onSelect }) => {
 };
 
 export default CategoryFilter;
+

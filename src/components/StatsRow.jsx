@@ -22,3 +22,4 @@ const StatsRow = ({ events, attendees, upcoming }) => {
 };
 
 export default StatsRow;
+

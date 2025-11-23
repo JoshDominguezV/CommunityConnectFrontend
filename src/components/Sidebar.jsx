@@ -186,3 +186,4 @@ function SidebarItem({ icon, label, onPress, onClose }) {
     </TouchableOpacity>
   );
 }
+

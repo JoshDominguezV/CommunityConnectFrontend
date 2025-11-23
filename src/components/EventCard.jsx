@@ -58,3 +58,4 @@ const EventCard = ({ event, onOpen }) => {
 };
 
 export default EventCard;
+
