@@ -1,52 +1,56 @@
+// /src/components/EventCard.jsx
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
+import { View, Text, TouchableOpacity, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import styles from "../styles/dashboardStyles";
 
-const EventCard = ({ event, onAttend, onOpen }) => {
-  const isUpcoming = new Date(event.date) > new Date();
+const EventCard = ({ event, onOpen }) => {
   return (
-    <TouchableOpacity activeOpacity={0.95} onPress={() => onOpen && onOpen(event)}>
+    <TouchableOpacity activeOpacity={0.9} onPress={onOpen}>
       <LinearGradient
-        colors={["rgba(255,255,255,0.03)", "rgba(124,58,237,0.03)"]}
+        colors={["rgba(255,255,255,0.05)", "rgba(60,70,120,0.1)"]}
         style={styles.eventCard}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 1 }}
       >
-        <View style={styles.eventHeader}>
-          <View style={styles.eventDate}>
-            <Text style={styles.eventDay}>{new Date(event.date).getDate()}</Text>
-            <Text style={styles.eventMonth}>{new Date(event.date).toLocaleString('es-ES', { month: 'short' }).toUpperCase()}</Text>
-          </View>
+        <View style={{ flexDirection: "row", justifyContent: "space-between" }}>
+          <Text style={styles.eventTitle}>{event.title}</Text>
 
-          <View style={[styles.statusIndicator, isUpcoming ? styles.statusUpcoming : styles.statusPast]}>
-            <Text style={styles.statusText}>{isUpcoming ? "PRÓXIMO" : "PASADO"}</Text>
+          <View style={styles.badgeIcon}>
+            <Ionicons name="code-slash" size={18} color="#fff" />
           </View>
         </View>
 
-        <Text style={styles.eventTitle} numberOfLines={2}>{event.title}</Text>
-        <Text style={styles.eventDescription} numberOfLines={3}>{event.description}</Text>
+        <Text style={styles.eventDescription} numberOfLines={2}>
+          {event.description}
+        </Text>
 
-        <View style={{ flexDirection: "row", justifyContent: "space-between", marginTop: 12, alignItems: "center" }}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <Ionicons name="location-outline" size={14} color="#9aa6bf" />
-            <Text style={styles.infoText}>{event.location}</Text>
+        <View style={styles.eventInfoRow}>
+          <View style={styles.eventInfoLeft}>
+            <Ionicons name="calendar-outline" size={14} color="#9aa6bf" />
+            <Text style={styles.infoText}>
+              {new Date(event.date).toLocaleDateString("es-ES", {
+                day: "2-digit",
+                month: "short",
+              })}
+            </Text>
+            <Ionicons name="time-outline" size={14} color="#9aa6bf" />
+            <Text style={styles.infoText}>00:00</Text>
           </View>
 
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <Ionicons name="people-outline" size={14} color="#9aa6bf" />
-            <Text style={styles.infoText}>{event.attendees_count || 0}/{event.max_participants || "∞"}</Text>
+          <View style={styles.eventRightGroup}>
+            <View style={styles.avatarStack}>
+              {[1, 2, 3].map((i) => (
+                <Image
+                  key={i}
+                  source={{ uri: "https://i.pravatar.cc/150?img=" + (i + 3) }}
+                  style={styles.avatarSmall}
+                />
+              ))}
+            </View>
+            <Text style={styles.countText}>
+              +{event.attendees_count || 0}
+            </Text>
           </View>
-        </View>
-
-        <View style={{ flexDirection: "row", justifyContent: "flex-end", marginTop: 12 }}>
-          <TouchableOpacity onPress={() => onAttend && onAttend(event.id)} style={styles.attendButton}>
-            <LinearGradient colors={["#05f6ff", "#7c3aed"]} style={styles.attendButtonGradient}>
-              <Ionicons name="checkmark" size={14} color="#05203a" />
-              <Text style={styles.attendButtonText}>Asistir</Text>
-            </LinearGradient>
-          </TouchableOpacity>
         </View>
       </LinearGradient>
     </TouchableOpacity>
