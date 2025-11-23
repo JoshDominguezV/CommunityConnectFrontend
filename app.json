@@ -6,20 +6,16 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-
     "scheme": "com.communityconnect.frontend",
-
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.communityconnect.frontend"
     },
-
     "android": {
       "package": "com.communityconnect.frontend",
       "adaptiveIcon": {
@@ -27,12 +23,11 @@
         "backgroundColor": "#ffffff"
       }
     },
-
     "plugins": [
       "expo-web-browser",
-      "expo-secure-store"
+      "expo-secure-store",
+      "expo-mail-composer"
     ],
-
     "extra": {
       "eas": {
         "projectId": "0a72f9bf-269a-470f-adc1-f4653c55273e"
