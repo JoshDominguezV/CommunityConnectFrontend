@@ -1,4 +1,4 @@
-# 🎉 CommunityConnect - Aplicación de Gestión de Eventos Comunitarios
+# CommunityConnect - Aplicación de Gestión de Eventos Comunitarios
 
 <div align="center">
 
@@ -306,7 +306,7 @@ La documentación completa del proyecto, incluyendo:
 - 🏗️ **Arquitectura del Sistema:** Diagramas y explicaciones técnicas
 - 🎨 **Guía de Diseño:** Tokens de diseño y componentes UI
 
-**Se encuentra disponible en la carpeta:** [`/docs`](./docs/)
+**Se encuentra disponible en la carpeta:** [`/docs`](./docs/DPS_Gestión_Eventos_Comunitarios_CommunityConnect.pdf)
 
 
 ---
@@ -317,7 +317,7 @@ Este proyecto está bajo la licencia **MIT License**.
 ```
 MIT License
 
-Copyright (c) 2024 CommunityConnect Team
+Copyright (c) 2024 CommunityConnect
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -355,7 +355,7 @@ Ver el archivo [`LICENSE`](./LICENSE) para más detalles.
 - **[Tablero Trello](https://trello.com/invite/b/691ce1706f3b6e3be6bf0e82/ATTI03451bbfa4fd5b54aad02bcd44f53bce40504595/aplicacion-de-gestion-de-eventos-comunitarios)** - Seguimiento de tareas y sprints
 
 ### 🎨 Diseño
-- **[Mock-Ups en Figma](#)** - Prototipos y diseños de la aplicación
+- **[Mock-Ups en Figma](https://www.figma.com/design/66euKyXbzYtYLZokOleJJx/DPS?node-id=0-1&t=0S5bkxmaG97tYISF-1)** - Prototipos y diseños de la aplicación
 - **Paleta de Colores:**
   - Primary: `#06b6d4` (Cyan)
   - Secondary: `#7e22ce` (Purple)
