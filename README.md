@@ -8,7 +8,7 @@
 [![React Native](https://img.shields.io/badge/React%20Native-0.81.5-blue.svg)](https://reactnative.dev/)
 [![Expo](https://img.shields.io/badge/Expo-~54.0.24-purple.svg)](https://expo.dev/)
 
-• [Backend](https://github.com/KrevsX/event-management.git)[🔗 Trello Board](https://trello.com/invite/b/691ce1706f3b6e3be6bf0e82/ATTI03451bbfa4fd5b54aad02bcd44f53bce40504595/aplicacion-de-gestion-de-eventos-comunitarios) • [🎨 Diseños Mock-Ups](#) • [📖 Documentación](./docs/)
+• [Backend](https://github.com/KrevsX/event-management.git) • [🔗 Trello Board](https://trello.com/invite/b/691ce1706f3b6e3be6bf0e82/ATTI03451bbfa4fd5b54aad02bcd44f53bce40504595/aplicacion-de-gestion-de-eventos-comunitarios) • [🎨 Diseños Mock-Ups](https://www.figma.com/design/66euKyXbzYtYLZokOleJJx/DPS?node-id=0-1&t=0S5bkxmaG97tYISF-1) • [📖 Documentación](./docs/DPS_Gestión_Eventos_Comunitarios_CommunityConnect.pdf)
 
 </div>
 
@@ -30,7 +30,7 @@
 
 ## 🌟 Sobre el Proyecto
 
-**CommunityConnect** es una aplicación móvil multiplataforma (iOS/Android) que permite a los usuarios descubrir eventos comunitarios, registrar su asistencia y crear nuevos eventos. La aplicación ofrece una experiencia moderna con autenticación social, interfaz glassmorphism y gestión en tiempo real.
+**CommunityConnect** es una aplicación móvil multiplataforma (Android) que permite a los usuarios descubrir eventos comunitarios, registrar su asistencia y crear nuevos eventos. La aplicación ofrece una experiencia moderna con autenticación social, interfaz glassmorphism y gestión en tiempo real.
 
 ### 🎯 Objetivos del Proyecto
 
@@ -43,7 +43,7 @@
 
 ## 👥 Integrantes del Equipo
 
-### Grupo Teórico: **[NÚMERO DE GRUPO]**
+### Grupo Teórico: **[DPS941 G01T]**
 
 | Nombre Completo | Carnet | Rol | GitHub |
 |----------------|--------|-----|--------|
@@ -58,17 +58,14 @@
 ### 🔐 Autenticación
 - ✅ Registro e inicio de sesión tradicional
 - ✅ Login con Google OAuth 2.0
-- ⏳ Login con Facebook (en desarrollo)
 - ✅ Persistencia de sesión segura
 
 ### 📅 Gestión de Eventos
 - ✅ Visualización de eventos próximos y pasados
 - ✅ Creación de eventos con formulario completo
-- ✅ Filtrado por categorías (Tecnología, Música, Deportes, etc.)
 - ✅ Búsqueda en tiempo real
 - ✅ Confirmación de asistencia
 - ✅ Control de capacidad máxima
-- ⏳ Comentarios y valoraciones (próximamente)
 
 ### 🎨 Interfaz de Usuario
 - ✅ Diseño moderno con glassmorphism
@@ -134,7 +131,7 @@ npm install -g expo-cli
 
 1. **Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/CommunityConnectFrontend.git
+git clone https://github.com/JoshDominguezV/CommunityConnectFrontend.git
 cd CommunityConnectFrontend
 ```
 
@@ -184,7 +181,7 @@ npm run web
 2. Crear un nuevo proyecto o seleccionar uno existente
 3. Habilitar **Google+ API**
 4. Crear credenciales OAuth 2.0:
-   - **Tipo:** Aplicación web
+   - **Tipo:** Multiplataforma
    - **URIs de redirección autorizados:**
      - `https://auth.expo.io/@tu-usuario/CommunityConnectFrontend`
      - `com.communityconnect.frontend:/oauthredirect`
