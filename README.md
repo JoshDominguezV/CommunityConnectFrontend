@@ -47,7 +47,7 @@
 
 | Nombre Completo | Carnet | Rol | GitHub |
 |----------------|--------|-----|--------|
-| **[TEC. JOSUE NAHUM DOMINGUEZ VELASQUEZ]** | [DV241624] | Frontend Developer | [@JoshDominguezV] (#) |
+| **[TEC. JOSUE NAHUM DOMINGUEZ VELASQUEZ]** | [DV241624] | Frontend Developer | [@JoshDominguezV](#) |
 | **[TEC. KEVIN ARMANDO LEMUS ALAS]** | [LA242415] | Backend Developer | [@KrevsX](#) |
 
 
