@@ -232,17 +232,21 @@ CommunityConnectFrontend/
 │
 ├── src/
 │   ├── components/           # Componentes reutilizables
+│   │   ├── CategoryFilter.jsx
 │   │   ├── EventCard.jsx
+│   │   ├── FloatingParticles.jsx
 │   │   ├── GlassCard.jsx
 │   │   ├── Header.jsx
 │   │   ├── Sidebar.jsx
-│   │   ├── CategoryFilter.jsx
-│   │   ├── StatsRow.jsx
-│   │   └── FloatingParticles.jsx
+│   │   └──StatsRow.jsx
+│   │
+│   ├── navigation/             
+│   │   AppNavigatior.js
 │   │
 │   ├── screens/             # Pantallas principales
 │   │   ├── AuthScreen.jsx
 │   │   ├── DashboardScreen.jsx
+│   │   ├── EventsScreen.jsx
 │   │   └── CreateEventScreen.jsx
 │   │
 │   ├── services/            # Lógica de negocio y API
@@ -259,7 +263,7 @@ CommunityConnectFrontend/
 │       └── AppNavigator.js
 │
 ├── docs/                    # 📄 Documentación del proyecto
-│   └── [Documentación.pdf]  # Guía completa y manual de usuario
+│   └── DPS_Gestión_Eventos_Comunitarios_CommunityConnect.pdf  # Guía completa y manual de usuario
 │
 ├── App.jsx                  # Componente principal
 ├── index.ts                 # Punto de entrada
@@ -268,6 +272,7 @@ CommunityConnectFrontend/
 ├── package.json
 ├── tsconfig.json
 ├── .gitignore
+├── LICENSE
 └── README.md
 ```
 
